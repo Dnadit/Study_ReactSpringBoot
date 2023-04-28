@@ -17,8 +17,11 @@ public class MemberService {
 		this.memberRepo = memberRepo;
 	}
 	
-	public Member getMember(String id) {
-		return memberRepo.findById(id).get();
+	public Member getMember(String id) throws Exception {
+		Member findMember = memberRepo.findById(id).get();
+		if (findMember != null)
+			return findMember;
+		return null;
 		
 		
 	}
