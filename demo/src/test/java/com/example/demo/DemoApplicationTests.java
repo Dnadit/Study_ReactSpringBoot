@@ -16,7 +16,7 @@ class DemoApplicationTests {
 	@Test
 	void contextLoads() {
 		memberRepo.save(new Member().builder()
-				.id("aaa")
+				.userId("aaa")
 				.pass("1234")
 				.name("dnadit").build());
 	}

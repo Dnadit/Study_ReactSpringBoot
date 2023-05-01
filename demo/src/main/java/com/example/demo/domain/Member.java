@@ -20,7 +20,7 @@ import lombok.ToString;
 @Entity
 public class Member {	
 	@Id
-	private String id;
+	private String userId;
 	private String pass;
 	private String name;
 }

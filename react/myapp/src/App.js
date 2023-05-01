@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import LoginPage from './Components/LoginPage';
+import LoginView from './login/LoginView';
 
-function App() {
+const App = () => {
   return (
-    <LoginPage></LoginPage>
+    <LoginView />
   );
 }
 
